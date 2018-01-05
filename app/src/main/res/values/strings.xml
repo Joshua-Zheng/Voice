@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">督办小助手</string>
+    <!-- 主界面 -->
+    <string name="welcome">欢迎使用督办小助手</string>
+    <string name="you_speech_text">您:&#160;</string>
+    <string name="system_speech_text">System:&#160;</string>
+    <string name="pre_speech_btn">准备识别</string>
+    <string name="edit_text">&#160;在此输口令</string>
+    <string name="speech_text">按住&#160;说话</string>
+    <string name="null_text">发送内容不能为空</string>
+    <string name="send_btn">发送</string>
+    <string name="stop_rec">停止识别</string>
+    <string name="start_speak">正在识别,请开始说话</string>
+    <string name="exit">再按一次退出程序</string>
+    <string name="click_voice">点击开始语音</string>
+
+    <!-- 登陆界面 -->
+    <string name="user_image">User&#160;Image</string>
+    <string name="login_tip">请输入用户ID:</string>
+    <string name="login_id">用户ID:</string>
+    <string name="rem_id">记住用户ID并自动登陆</string>
+    <string name="login_success">登陆成功</string>
+    <string name="login_false">登陆失败,请输入用户ID</string>
+
+    <!-- Menu -->
+    <string name="break_off">断开连接</string>
+    <string name="clear_state">清空状态</string>
+    <string name="create_task">创建的任务</string>
+    <string name="relate_task">相关的任务</string>
+    <string name="logout">退出账户</string>
+    <string name="update">检查更新</string>
+    <string name="last_version">已是最新版本，无需更新。</string>
+    <string name="dialog_title">版本更新</string>
+    <string name="dialog_confirm">确定</string>
+
+    <!-- task -->
+    <string name="task1">用户创建的任务：无</string>
+    <string name="task3">用户相关的任务：无</string>
+    <string name="all_task">全部任务</string>
+    <string name="first_task">一级任务</string>
+    <string name="second_task">二级任务</string>
+    <string name="third_task">三级任务</string>
+
+</resources>

@@ -1,0 +1,58 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.aistrong.voice.MainSpeech">
+
+    <item
+        android:id="@+id/relate_task"
+        android:orderInCategory="1"
+        android:icon="@drawable/relate_task"
+        android:title="@string/relate_task"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/create_task"
+        android:orderInCategory="2"
+        android:icon="@drawable/create_task"
+        android:title="@string/create_task"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_more"
+        android:orderInCategory="3"
+        android:icon="@drawable/more_menu"
+        android:title=""
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/breakOff"
+                android:orderInCategory="1"
+                android:icon="@drawable/break_off"
+                android:title="@string/break_off"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:id="@+id/clearState"
+                android:orderInCategory="2"
+                android:icon="@drawable/clear"
+                android:title="@string/clear_state"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:id="@+id/update"
+                android:orderInCategory="3"
+                android:icon="@drawable/update"
+                android:title="@string/update"
+                app:showAsAction="ifRoom"/>
+
+            <item
+                android:id="@+id/logout"
+                android:orderInCategory="4"
+                android:icon="@drawable/logout"
+                android:title="@string/logout"
+                app:showAsAction="ifRoom"/>
+        </menu>
+
+    </item>
+
+</menu>

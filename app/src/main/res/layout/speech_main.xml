@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aistrong.voice.MainSpeech">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_message_recycler_view"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp" />
+
+    <EditText
+        android:labelFor="@+id/rec_edit_text"
+        android:id="@+id/rec_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@id/controlpane"
+        android:padding="10dp"
+        android:gravity="start|top"
+        android:background="@color/default_bubble_color_rcv"
+        android:textSize="15sp"
+        android:inputType="textMultiLine"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/controlpane"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/control_color">
+
+        <ImageButton
+            android:id="@+id/preSpeechBtn"
+            android:layout_alignParentStart="true"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/pre_speech_btn"
+            android:src="@drawable/speech" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/sendBtn"
+            android:layout_toEndOf="@id/preSpeechBtn">
+
+            <EditText
+                android:labelFor="@+id/edit_text"
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/edit_text"
+                android:textSize="15sp"
+                android:inputType="textMultiLine"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/speechBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/speech_text"
+                android:textColor="@color/default_message_color_rcv" />
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/sendBtn"
+            android:layout_alignParentEnd="true"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/send_btn"
+            android:src="@drawable/send" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

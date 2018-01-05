@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#208cd9</color>
+    <color name="colorPrimaryDark">#1d8ad7</color>
+    <color name="colorAccent">#737373</color>
+
+    <color name="user_image_color">#f5a910</color>
+    <color name="ready_send">#4fc21a</color>
+
+    <color name="control_color">#7af1f1f1</color>
+    <color name="colorButton">#5e5e5e</color>
+
+    <color name="default_bubble_color_rcv">#ffffff</color>
+    <color name="default_bubble_color_send">#2391df</color>
+
+    <color name="default_message_color_rcv">#383838</color>
+    <color name="default_message_color_send">#ffffff</color>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aistrong.voice.MainTask">
+
+    <FrameLayout
+        android:id="@+id/task_name"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_gravity="start|top">
+
+        <TextView
+            android:id="@+id/task1_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textColor="@color/default_bubble_color_rcv"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/task3_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textColor="@color/default_bubble_color_rcv"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/task_name"
+        android:layout_above="@id/task_button">
+
+        <FrameLayout
+            android:padding="10dp"
+            android:layout_gravity="start|top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/task1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/task1"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/task3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/task3"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/task_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/all_task"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="12dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/ready_send"
+            android:textColor="@color/default_bubble_color_rcv"
+            android:text="@string/all_task"/>
+
+        <Button
+            android:id="@+id/first_task"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="12dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/default_message_color_rcv"
+            android:text="@string/first_task"/>
+
+        <Button
+            android:id="@+id/second_task"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="12dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/default_message_color_rcv"
+            android:text="@string/second_task"/>
+
+        <Button
+            android:id="@+id/third_task"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="12dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/default_message_color_rcv"
+            android:text="@string/third_task"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
